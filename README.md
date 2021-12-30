@@ -1,4 +1,4 @@
-# Reddit-data
+#  Project Reddit-data
 
 # Problem statement
 
@@ -24,8 +24,22 @@ I examined the data for the reddit which is social media website where users can
 ----------
 # Output
 
+# Output1 :
+
+<img width="872" alt="Database schema reddit" src="https://user-images.githubusercontent.com/95974943/147754570-ab215139-b153-4eee-b4e9-04d1dd02cf43.png">
+
+
+ 
+<img width="872" alt="Tables" src="https://user-images.githubusercontent.com/95974943/147754508-2b1410e7-9309-48a2-8ce0-e46ffca88898.png">
+ 
+ 
+
+
+# Output2(final crux):
 I was able to see find out which content is most popular and what type of posts are trending. How many users are active and how many are not, so that after finding their details they can be notified for more participation. With these objectives we can improve user participation.
 
+
+<img width="464" alt="Average Score of Subreddits" src="https://user-images.githubusercontent.com/95974943/147754588-80eacf3a-2349-4ec7-b812-88e19b6d11d4.png">
 
 
 

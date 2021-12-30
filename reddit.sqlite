@@ -1,0 +1,98 @@
+SELECT * FROM users
+LIMIT 10;
+SELECT * FROM posts
+LIMIT 10;
+SELECT * FROM subreddits
+LIMIT 10;
+
+SELECT COUNT(*) AS subreddit_COUNT
+FROM subreddits;
+
+SELECT username, MAX(SCORE) AS 'HIGHEST SCORE'
+FROM users;
+
+SELECT title,MAX(SCORE) AS 'HIGHEST SCORE'
+FROM posts;
+
+SELECT NAME
+FROM subreddits 
+ORDER BY subscriber_count DESC
+LIMIT 5;
+
+SELECT users.id, users.username,posts.title, COUNT(*) AS 'POSTS MADE'
+FROM users 
+LEFT JOIN posts
+ON users.id=posts.user_id
+GROUP BY 1
+ORDER BY 1 DESC;
+
+SELECT users.id, posts.title
+FROM users
+INNER JOIN posts
+ON users.id=posts.user_id;
+
+SELECT *
+FROM posts
+UNION
+SELECT *
+FROM posts2;
+
+WITH popular_posts AS(
+  SELECT *
+  FROM posts
+  WHERE score >=5000
+)
+SELECT subreddits.name,popular_posts.title,popular_posts.score 
+FROM subreddits 
+INNER JOIN popular_posts
+ON popular_posts.subreddit_id=subreddits.id
+ORDER BY popular_posts.score DESC;
+
+SELECT posts.score,subreddits.name
+FROM posts
+INNER JOIN subreddits
+ON posts.subreddit_id=subreddits.id
+GROUP BY 2
+ORDER BY 1 DESC;
+
+SELECT subreddits.name, AVG(posts.score) AS 'AVERAGE SCORE'
+FROM subreddits
+INNER JOIN posts
+ON posts.subreddit_id=subreddits.id
+GROUP BY 1
+ORDER BY 2 DESC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

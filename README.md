@@ -1,10 +1,10 @@
 # Reddit-data
 
-Problem statement
+#Problem statement
 I examined the data for the reddit which is social media website where users can discuss about a particular topic in subreddits. They can post content and get downvotes and upvotes for the post. My job was to find the most trending things in terms of growth where people have shown maximum interest.
 
 -----------
-Implementation
+#Implementation
 1. Took the feel of the table. Three Tables-users, posts, subreddits
 2. Identify Primary keys and Foreign keys
 3. Total count of different subreddits
@@ -20,7 +20,7 @@ Implementation
 10.Calculate the average score of all the posts for each subreddit
 
 ----------
-Output(what we able to acheive from this)
+#Output
 I was able to see find out which content is most popular and what type of posts are trending. How many users are active and how many are not, so that after finding their details they can be notified for more participation. With these objectives we can improve user participation.
 
 
